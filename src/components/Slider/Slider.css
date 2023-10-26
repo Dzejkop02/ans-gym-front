@@ -1,0 +1,11 @@
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+.slide {
+    flex: 0 0 100%; 
+}
+.zdj{
+    width: 100%;
+}

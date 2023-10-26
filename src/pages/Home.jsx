@@ -1,10 +1,11 @@
 import React from "react";
+import Slider from '../components/Slider/Slider';
 
 const Home = () => {
     return (
         <div>
-            <div className="slider">
-                tu będzie slider
+            <div className="slider-box">
+                <Slider />
             </div>
             <div className="kontakt">
                 POTRZEBUJESZ KARNET NA DŁUŻSZY CZAS?
