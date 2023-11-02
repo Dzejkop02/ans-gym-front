@@ -12,7 +12,7 @@
 .nav a {
     text-decoration: none;
     color: white; /* Kolor tekstu menu */
-    font-size: 16px;
+    font-size: 35px;
     font-weight: bold;
 }
 .nav{
@@ -24,8 +24,9 @@
 }
 .nav a:hover {
     color: red; /* Kolor tekstu po najechaniu myszką */
+    text-decoration: underline;
 }
 .logo {
-    width: 4%;
-    margin-left: 30%;
+    width: 5%;
+    margin-left: 25%;
 }
