@@ -6,7 +6,28 @@
 }
 .slide {
     flex: 0 0 100%; 
+    
 }
 .zdj{
     width: 100%;
+   
+   
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 100;
+}
+.poprzedni {
+    left: 5px;
+}
+.nastepny {
+    right: 0;
 }
