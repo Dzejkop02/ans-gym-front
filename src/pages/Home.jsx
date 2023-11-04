@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from '../components/Slider/Slider';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -18,7 +19,7 @@ const Home = () => {
                 mapa
             </div>
             <div className="stopka">
-                MASZ PYTANIE?
+                <Footer />
             </div>
         </div>
 
