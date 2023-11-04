@@ -1,7 +1,8 @@
 .slider {
     display: flex;
     transition: transform 0.3s ease-in-out;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 90vh;
 }
 .slide {
     flex: 0 0 100%; 
