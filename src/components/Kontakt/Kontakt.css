@@ -1,0 +1,35 @@
+.kontakt {
+    background-color: #ef233c;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.kontakt a{
+    margin-right: 25%;
+    margin-top: 3.2%;
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    color: #ef233c;
+    border-radius:25px;
+    padding: 1%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    
+}
+
+.lewo{
+    margin-left: 16%;
+    width: 70%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 2;
+}

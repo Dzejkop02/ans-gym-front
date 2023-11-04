@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from '../components/Slider/Slider';
+import Kontakt from "../components/Kontakt/Kontakt";
 import Footer from '../components/Footer/Footer';
 
 const Home = () => {
@@ -9,8 +10,7 @@ const Home = () => {
                 <Slider />
             </div>
             <div className="kontakt">
-                POTRZEBUJESZ KARNET NA DŁUŻSZY CZAS?
-                Skontaktuj się z nami!
+                <Kontakt/>
             </div>
             <div className="porady">
                 porady?
