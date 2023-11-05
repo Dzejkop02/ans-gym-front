@@ -6,7 +6,8 @@
     text-decoration: none;
     color: white;
     font-size: 1em;
-    font-weight: bold;
+    padding-top: 2em;
+    font-family: Lalezar;
 }
 
 p{
@@ -17,6 +18,7 @@ p{
     width: 50%;
     text-align: left;
     margin-left: 20%;
+    height: 25em;
 }
 
 .right{
@@ -24,6 +26,11 @@ p{
     text-align: center;
     width: 50%;
     justify-content: center;
+    height: 25em;
+}
+
+.right h1{
+    margin-left: -5%;
 }
 
 table{
@@ -31,7 +38,6 @@ table{
     margin-left: 34%;
     font-size: 1.5em;
 }
-
 
 td:nth-child(1) {
     width: 30%; 
@@ -47,22 +53,25 @@ width: 40%;
 }
 
 .znajdz{
+    padding-top: 3%;
     color: black;
 }
 
 .zdj {
     display: flex;
+    margin-top: -1.8em;
   }
   
 .zdj img {
-    margin-top: -1em;
-    height: 3em;
-    margin-right: 1.5em;
+    margin-top: 2em;
+    height: 3.5em;
+    margin-right: 2em;
     margin-bottom: 1em;
  }
 
 .zdjr img {
-    margin-top: -2.5em;
-    margin-left: -5em;
-    height: 15em;
+    margin-top: -2em;
+    margin-left: -2em;
+    height: 18em;
+    margin-bottom: -1em;
 }
