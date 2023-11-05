@@ -1,0 +1,31 @@
+.map {
+    background-color: black;
+    display: flex;
+    height: 450px;
+}
+
+.mleft {
+    width: 50%; 
+    height: 100%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 3em;
+    margin-left: 6%;
+}
+
+.mleft h1 {
+    color: #ef233c;
+    width: 50%;
+    margin-left: 30%;
+}
+
+.mleft p {
+    width: 37%;
+    margin-left: 30%;
+}
+
+.mright {
+    width: 50%; 
+    height: 100%;
+}
