@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from '../components/Slider/Slider';
 import Kontakt from "../components/Kontakt/Kontakt";
+import Kalkulatory from "../components/Kalkulatory/Kalkulatory";
 import Footer from '../components/Footer/Footer';
 import Map from '../components/Map/Map';
 
@@ -14,7 +15,7 @@ const Home = () => {
                 <Kontakt/>
             </div>
             <div className="porady">
-                porady?
+                <Kalkulatory />
             </div>
             <div className="mapa">
                 <Map />
