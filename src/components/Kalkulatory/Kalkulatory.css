@@ -1,0 +1,71 @@
+.main {
+    background-image: url('../../../public/zdj/tlo.jpg');
+    height: 125em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kleft {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.kright {
+    background-color: black;
+    opacity: 0.8;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.L-word {
+    margin-top: 1em;
+    margin-right: 0.5em;
+    color: #EF233C;
+    font-size: 5em;
+    text-align: right;
+}
+
+.R-word {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    color: #FFFFFF;
+    font-size: 5em;
+}
+
+.clear {
+    clear: both;
+}
+
+.k-images {
+    margin-top: 8em;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    margin: 2em 15em;
+}
+
+.k-descriptions {
+    margin-top: 10em;
+}
+
+.kalk-desc {
+    margin: 6em auto;
+    width: 60%;
+    color: #FFFFFF;
+}
+
+.k-title {
+    margin: 0.5em 0;
+    color: #EF233C;
+    font-size: 3em;
+}
+.k-content {
+    color: #FFFFFF;
+    font-size: 2.1em;
+}

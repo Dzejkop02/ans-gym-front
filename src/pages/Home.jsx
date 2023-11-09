@@ -5,6 +5,7 @@ import Kalkulatory from "../components/Kalkulatory/Kalkulatory";
 import Footer from '../components/Footer/Footer';
 import Map from '../components/Map/Map';
 
+
 const Home = () => {
     return (
         <div>
@@ -14,7 +15,7 @@ const Home = () => {
             <div className="kontakt">
                 <Kontakt/>
             </div>
-            <div className="porady">
+            <div className="kalkulatory">
                 <Kalkulatory />
             </div>
             <div className="mapa">
