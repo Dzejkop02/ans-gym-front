@@ -6,12 +6,12 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: black; /* Czarne tło */
 }
 .slider{
     width: 99vw;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -20,14 +20,14 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     width: max-content;
     transition: 1s;
 }
 .list img{
     width:  99vw;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
 }
 .buttons{

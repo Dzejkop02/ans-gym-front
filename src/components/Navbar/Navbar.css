@@ -1,40 +1,72 @@
-.nav{
-    background-color: black; /* Kolor tła menu */
-    padding: 15px 0;
+.nav {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.75); /* Kolor tła menu */
+    /*background-color: black;*/
+    padding: 15px 10px 15px 0;
+    transition: background-color 0.3s;
+}
+
+.nav__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
-    
-    
+
+    max-width: 1024px;
+    margin: 0 auto;
 }
-.nav ul {
+
+.nav ul,
+.nav__spans {
     list-style-type: none;
-    margin: 0;
-    margin-right: 20%;
-    padding: 0;
     display: flex;
     justify-content: right;
 }
+
 .nav li {
     margin: 0 15px;
 }
-.nav a {
+
+.nav__a {
     text-decoration: none;
     color: white; /* Kolor tekstu menu */
     font-size: 30px;
     font-weight: bold;
     padding: 6px 0;
+    border-bottom: solid 5px transparent;
 }
 
-.nav a:hover {
+.nav__a:hover,
+.nav__a.active {
     color: red; /* Kolor tekstu po najechaniu myszką */
     border-bottom: solid 5px red; /* Linia pod tekstem */
-   
-    
-    
 }
+
+.nav__logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    min-width: 50px;
+}
+
 .logo {
-    width: 4%;
+    width: 100%;
     margin-left: 25%;
+}
+
+.nav__span {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.nav__white-text {
+    color: white;
+    margin-right: 8px;
+}
+
+.nav__red-text {
+    color: #ef233c;
 }
