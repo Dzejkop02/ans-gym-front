@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import './MaxCalculatorContent.css';
 
 const MaxCalculatorContent = () => {
+    const [weight, setWeight] = useState(0);
+    const [reps, setReps] = useState(0);
+    const [result, setResult] = useState(0);
+
+    const handleFormSubmit = e => {
+        e.preventDefault();
+        setResult(Math.round(weight/((1.0278)-(0.0278*reps))));
+    }
+
     return (
         <div className="max-calc">
             <main className="max-calc__main gradient">
@@ -18,14 +27,14 @@ const MaxCalculatorContent = () => {
 
                 <p className="max-calc__heading">Maksymalny ciężar:</p>
 
-                <div className="max-calc__form">
-                    <input className="input" type="number" placeholder="Cięzar"/>
-                    <input className="input" type="number" placeholder="Ilość powtórzeń"/>
-                    <button className="btn">Oblicz</button>
-                </div>
+                <form className="max-calc__form" onSubmit={handleFormSubmit}>
+                    <input className="input" type="number" placeholder="Cięzar" value={weight || ''} onChange={e => setWeight(+e.target.value)}/>
+                    <input className="input" type="number" placeholder="Ilość powtórzeń" value={reps || ''} onChange={e => setReps(+e.target.value)}/>
+                    <button type="submit" className="btn">Oblicz</button>
+                </form>
 
-                <p className="max-calc__result">Przewidywany ciężar maksymalny to: <span
-                    className="max-calc__max">150</span></p>
+                {result ? <p className="max-calc__result">Przewidywany ciężar maksymalny to: <span
+                    className="max-calc__max">{result}</span></p> : null}
             </main>
         </div>
 
