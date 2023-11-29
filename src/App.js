@@ -7,6 +7,7 @@ import Galeria from './pages/galeria';
 import Onas from './pages/onas';
 import Kontakt from './pages/kontakt';
 import NotFound from './pages/notfound';
+import MaxCalculator from "./pages/MaxCalculator";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/galeria" element={<Galeria />} />
                 <Route path="/onas" element={<Onas />} />
                 <Route path="/kontakt" element={<Kontakt />} />
+                <Route path="/kalkulator-maksow" element={<MaxCalculator />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
