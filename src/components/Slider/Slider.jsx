@@ -21,6 +21,10 @@ const Slider = () => {
     setActive((active - 1 + items.length) % items.length);
   };
 
+  const handleDotClick = (index) => {
+    setActive(index);
+  };
+
   useEffect(() => {
     const refreshSlider = setInterval(nextslide, 6000);
 
@@ -61,7 +65,7 @@ const Slider = () => {
       </div>
       <ul className="dots">
         {items.map((_, index) => (
-          <li key={index} className={index === active ? 'active' : ''}></li>
+          <li key={index} className={index === active ? 'active' : ''} onClick={() => handleDotClick(index)}></li>
         ))}
       </ul>
     </div>
