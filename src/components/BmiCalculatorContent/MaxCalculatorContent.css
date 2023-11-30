@@ -4,8 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 12vh;
-    padding-bottom: 1em;
+    padding: 12vh 5px 1em 5px;
 }
 
 .bmi-calc__main {
@@ -180,7 +179,6 @@
 @media only screen and (max-width: 780px) {
     .bmi-calc__main {
         flex-direction: column;
-        margin: 0 5px;
     }
 
     .bmi-calc__h4--calculator {
