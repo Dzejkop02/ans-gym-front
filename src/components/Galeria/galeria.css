@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+    font-family:Lalezar;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+    justify-content: space-around;
+    background-image: url('../../../public/zdj/galeria-tlo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+}
+
+.gallery-item {
+    background-color: #ddd; /* Placeholder color */
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top{
+    background-color: #ef233c;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
