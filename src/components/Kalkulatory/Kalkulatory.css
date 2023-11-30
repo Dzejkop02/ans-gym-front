@@ -74,9 +74,14 @@
     margin-top: 0.3em;
     color: #EF233C;
     font-size: 3vw;
+    line-height: 3.5vw;
 }
 
 .k-textpart p {
     color: #FFFFFF;
     font-size: 2vw;
+}
+
+.k-link {
+    text-decoration: none;
 }
