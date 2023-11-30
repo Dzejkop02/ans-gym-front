@@ -13,10 +13,18 @@ const Footer = () => {
                     <p className="footerp">33-100 Tarnów</p>
                 <h1 className="footer-znajdz">ZNAJDŹ NAS NA: </h1>
                 <div className="footer-zdj">
-                    <img src="zdj/facebook.png" alt="fb"/>
-                    <img src="zdj/instagram.png" alt="ig"/>
-                    <img src="zdj/youtube.png" alt="yt"/>
-                    <img src="zdj/linkedin.png" alt="il"/>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/facebook.png" alt="fb" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/instagram.png" alt="ig" />
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/youtube.png" alt="yt"/>
+                    </a>
+                    <a href="https://pl.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/linkedin.png" alt="il"/>
+                    </a>
                 </div>
             </div>
             <div className="footer-right">

@@ -12,14 +12,13 @@
     grid-template-columns: repeat(4, 1fr); 
     justify-items: center; 
     padding-bottom: 3%;
-}
-
-.divonasimg{
-    size: 20%;
+    padding-left: 14%;
+    padding-right: 12%;
 }
 
 img.onasimg{
     width: 100%;
+    height: 100vh;
 }
 
 h1.h1ekspansja{
@@ -38,6 +37,8 @@ h1.h1ekspansja{
     width: 50%; 
     box-sizing: border-box; 
     padding-top: 2%;
+    text-align: center;
+    
 }
 
 .definicja{
