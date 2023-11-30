@@ -1,0 +1,56 @@
+.max-calc {
+    min-height: 100vh;
+    background-image: url('../../../public/zdj/bg-max-calculator.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12vh;
+}
+
+.max-calc__main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 1.6em;
+}
+
+.max-calc__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ef233c;
+    font-weight: normal;
+}
+
+.max-calc__p {
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 0.8em;
+}
+
+.max-calc__form {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+.max-calc__result {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 0.8em;
+}
+
+.max-calc__max {
+    color: #ef233c;
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 550px) {
+    .max-calc__form {
+        flex-direction: column;
+    }
+
+    .max-calc__form *{
+        margin-bottom: 1em;
+    }
+}

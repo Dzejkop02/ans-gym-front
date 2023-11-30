@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
-    return <div className="jumbotron">
+    return <div className="jumbotron" style={{paddingTop: '10vh'}}>
         <h1 className="display-4">404 - Not found!</h1>
         <p className="Lead">Page you are looking for does not exist.</p>
         <hr className="my-4"/>
         <p>Go back to Home</p>
-        <Link className="btn btn-primary btn-lg" to="/home" role="button">Home</Link>
+        <Link className="btn btn-primary btn-lg" to="/" role="button">Home</Link>
     </div>
 };
 

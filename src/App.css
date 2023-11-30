@@ -1,0 +1,26 @@
+.gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.65) 65%, rgba(255, 255, 255, 0.7));
+}
+
+.input {
+    border: 1px solid black;
+    border-radius: 999px;
+    padding: 0.5em 1em;
+    font-family: inherit;
+}
+
+.btn {
+    background-color: #ef233c;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ee3b55;
+}
