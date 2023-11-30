@@ -9,7 +9,8 @@ const BmiCalculatorContent = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault();
-        // setResult(Math.round(weight/((1.0278)-(0.0278*reps))));
+        const num = weight / ((height/100) * (height/100));
+        setResult(+num.toFixed(2));
     }
 
     return (
