@@ -1,71 +1,82 @@
-.main {
+.k-main {
     background-image: url('../../../public/zdj/tlo.jpg');
-    height: 125em;
+    height: 115vw;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.kleft {
+.k-left {
     float: left;
     width: 50%;
     height: 100%;
 }
 
-.kright {
-    background-color: black;
-    opacity: 0.8;
+.k-right {
+    background-color: rgba(0,0,0,0.8);
     float: left;
     width: 50%;
     height: 100%;
 }
 
 .L-word {
-    margin-top: 1em;
-    margin-right: 0.5em;
+    position: absolute;
+    left: 18vw;
     color: #EF233C;
-    font-size: 5em;
+    font-size: 12vw;
     text-align: right;
 }
 
 .R-word {
-    margin-top: 1em;
-    margin-left: 0.5em;
+    position: absolute;
+    right: 18vw;
     color: #FFFFFF;
-    font-size: 5em;
+    font-size: 12vw;
 }
 
 .clear {
     clear: both;
 }
 
-.k-images {
-    margin-top: 8em;
-    text-align: center;
-}
-
-.k-img {
-    width: 30%;
-    margin: 2em 15em;
-}
-
 .k-descriptions {
-    margin-top: 10em;
+    top: 15vw;
+    position: absolute;
 }
 
-.kalk-desc {
-    margin: 6em auto;
+.kalk-item {
+    margin: 6vw auto;
     width: 60%;
     color: #FFFFFF;
+    display: flex;
+    gap: 30%;
 }
 
-.k-title {
-    margin: 0.5em 0;
-    color: #EF233C;
-    font-size: 3em;
+
+.k-img {
+    width: 25%;
+    height: 100%;
+    min-width: 30%;
 }
-.k-content {
+
+.k-textpart, .k-img{
+    float: left;
+}
+
+.k-textpart {
+    height: 30%;
+    width: 60%;
+    min-width: 60%;
+}
+
+.k-textpart h2{
+    margin-top: 0.3em;
+    color: #EF233C;
+    font-size: 3vw;
+}
+
+.k-textpart p {
     color: #FFFFFF;
-    font-size: 2.1em;
+    font-size: 2vw;
 }
