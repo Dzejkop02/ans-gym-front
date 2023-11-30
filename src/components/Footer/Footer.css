@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     background-color: #ef233c;
     text-align: center;
@@ -8,70 +8,65 @@
     font-size: 1em;
     padding-top: 2em;
     font-family: Lalezar;
+    margin-top: auto;
 }
 
-p{
+p {
     font-size: 1.5em;
 }
 
-.left{ 
+.left {
     width: 50%;
     text-align: left;
-    margin-left: 20%;
+    padding-left: 13%;
     height: 25em;
 }
 
-.right{
-    margin-left: -30%;
-    text-align: center;
+.right {
+    margin-left: 20%;
+    text-align: left; 
     width: 50%;
     justify-content: center;
-    height: 25em;
 }
 
-.right h1{
-    margin-left: -5%;
-}
-
-table{
-    text-align: justify;
-    margin-left: 34%;
+table {
     font-size: 1.5em;
+    width: 80%; 
+    padding-left: 0;
 }
 
 td:nth-child(1) {
-    width: 30%; 
-}
-  
-td:nth-child(2) {
-width: 40%;
+    width: 30%;
 }
 
-.adres{
+td:nth-child(2) {
+    width: 40%;
+}
+
+.adres {
     margin-left: 39.5%;
     text-align: justify;
 }
 
-.znajdz{
+.znajdz {
     padding-top: 3%;
     color: black;
 }
 
 .zdj {
     display: flex;
-    margin-top: -1.8em;
-  }
-  
+    margin-top: -4.5%;
+}
+
 .zdj img {
-    margin-top: 2em;
+    margin-top: 4%;
     height: 3.5em;
-    margin-right: 2em;
-    margin-bottom: 1em;
- }
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
 
 .zdjr img {
-    margin-top: -2em;
-    margin-left: -2em;
+    margin-top: -5%;
     height: 18em;
-    margin-bottom: -1em;
+    margin-bottom: -3%;
 }
