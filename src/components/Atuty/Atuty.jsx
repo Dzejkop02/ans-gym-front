@@ -9,7 +9,6 @@ const Atuty = () => {
                 <img className="onasimg" src="zdj/victor-freitas-nlZTjUZX2qo-unsplash.jpg" alt="vf"/>
             </div>
             <div className="acontent">
-                
                 <div className="doswiadczenie">
                     <img className="doswiadczenie" src="zdj/calendar-2.png" alt="cl"/>
                     <h1 className="h1atuty">Doświadczenie</h1>
