@@ -1,0 +1,63 @@
+.kontakt-main {
+    background-image: url("../../../public/zdj/kontakt_tlo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70em;
+}
+
+.kontakt-guziki {
+position: absolute;
+top: 25em;
+left: 10%;
+}
+
+.kontakt-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin-top: 1em;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.kontakt-btn:hover {
+    color: #EF233C;
+}
+
+.kontakt-info{
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+.kontakt-info h1{
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    color: #EF233C;
+}
+
+.kontakt-info p{
+    margin: auto;
+    width: 65%;
+    padding-bottom: 1em;
+}
+
+.kontakt-mapa-info {
+    background-color: #EF233C;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 2em 0;
+}
+
+.kontakt-mapa {
+    height: 50em;
+}
