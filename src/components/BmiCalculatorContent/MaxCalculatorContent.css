@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 12vh;
+    padding-bottom: 1em;
 }
 
 .bmi-calc__main {
@@ -12,4 +13,143 @@
     margin: 0 auto;
     display: flex;
     gap: 2vw;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.bmi-calc__h3,
+.bmi-calc__h4,
+.bmi-calc__heading {
+    color: #ef233c;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.bmi-calc__heading {
+    font-size: 2em;
+}
+
+.bmi-calc__h3 span, .bmi-calc__h4 span {
+    color: white;
+}
+
+.bmi-calc__calculator,
+.bmi-calc__description {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bmi-calc__calculator {
+    min-width: 280px;
+    text-align: center;
+}
+
+.bmi-calc__h4 {
+    text-align: left;
+}
+
+.bmi-calc__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 0.5em;
+    margin-top: 1.6em;
+}
+
+.input-radio {
+    transform: translateY(-2px);
+}
+
+.input-radio[type='radio']:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid #d1d3d1;
+}
+
+.input-radio[type='radio']:checked:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid #d1d3d1;
+}
+
+.input--bmi {
+    width: 100%;
+}
+
+.bmi-calc__label {
+    color: white;
+    font-size: 1.2em;
+}
+
+.bmi-calc__label--red {
+    color: #ef233c;
+}
+
+.bmi-calc__group {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn--bmi {
+    margin-top: 1.6em;
+}
+
+.bmi-calc__result {
+    color: #ef233c;
+    font-size: 2em;
+    line-height: 500%;
+}
+
+.bmi-calc__list {
+    font-size: 0.8em;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.bmi-calc__p {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.bmi-calc__p--small {
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 780px) {
+    .bmi-calc__main {
+        flex-direction: column;
+        margin: 0 5px;
+    }
+
+    .bmi-calc__h4--calculator {
+        text-align: center;
+    }
+
+    .bmi-calc__list {
+        display: inline-block;
+    }
+
+    .bmi-calc__p {
+        font-size: 1.4em;
+    }
 }
