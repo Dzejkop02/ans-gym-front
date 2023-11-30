@@ -135,6 +135,48 @@
     font-size: 0.8em;
 }
 
+/* ///////// BMI INFO SECTION ////////// */
+.bmi-info {
+    background-image: url('../../../public/zdj/bg-bmi-calculator-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bmi-info__left {
+    width: 50%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    padding: 5em;
+    color: white;
+}
+
+.bmi-info__left-content {
+    max-width: 400px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.bmi-info__h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.bmi-info__h2 span {
+    color: #ef233c;
+}
+
+.bmi-info__p {
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+    .bmi-info__left {
+        padding: 5em 1em;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     .bmi-calc__main {
         flex-direction: column;
@@ -151,5 +193,14 @@
 
     .bmi-calc__p {
         font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bmi-info__left {
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        padding: 5em 1em;
+        color: white;
     }
 }

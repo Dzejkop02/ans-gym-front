@@ -91,14 +91,17 @@ const BmiCalculatorContent = () => {
             </section>
             <section className="bmi-info">
                 <div className="bmi-info__left">
-                    <h2 className="bmi-info__h2">Czym jest <span>BMI</span> ?</h2>
-                    <p className="bmi-info__p">BMI jest jednym z ważnych wskaźników określających nasz stan fizyczny, ale
-                        niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik
-                        ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną otyłość
-                        brzuszną i to nawet przy prawidłowym BMI! Ponadto, paradoksalnie, badania
-                        naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej
-                        od osób z tzw. "prawidłową wagą". Pojawiają się nawet głosy, że ustalony
-                        arbitralnie przez <strong>WHO</strong> próg nadwagi (25) jest zbyt niski.</p>
+                    <div className="bmi-info__left-content">
+                        <h2 className="bmi-info__h2">Czym jest <span>BMI</span> ?</h2>
+                        <p className="bmi-info__p">BMI jest jednym z ważnych wskaźników określających nasz stan
+                            fizyczny, ale
+                            niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik
+                            ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną otyłość
+                            brzuszną i to nawet przy prawidłowym BMI! Ponadto, paradoksalnie, badania
+                            naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej
+                            od osób z tzw. "prawidłową wagą". Pojawiają się nawet głosy, że ustalony
+                            arbitralnie przez <strong>WHO</strong> próg nadwagi (25) jest zbyt niski.</p>
+                    </div>
                 </div>
             </section>
         </>
