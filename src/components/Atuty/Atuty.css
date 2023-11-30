@@ -7,10 +7,10 @@
 }
 
 .acontent {
-    padding: 5% 10%; /* Dodano ogólne dopełnienie */
+    padding: 5% 10%; 
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    justify-items: center; /* Ustawia elementy na środku poziomo */
+    justify-items: center; 
     padding-bottom: 3%;
 }
 
@@ -28,41 +28,41 @@ h1.h1ekspansja{
 
 .doswiadczenie{
     flex: 1;
-    width: 50%; /* Zmieniono szerokość na 100%, aby wypełnić dostępne miejsce */
-    box-sizing: border-box; /* Dodano box-sizing, aby zachować pełną szerokość wraz z paddingiem */
-    padding-top: 2%; /* Dodano dopełnienie od góry */
+    width: 50%; 
+    box-sizing: border-box; 
+    padding-top: 2%; 
 }
 
 .ekspansja{
     flex: 1;
-    width: 50%; /* Zmieniono szerokość na 100%, aby wypełnić dostępne miejsce */
-    box-sizing: border-box; /* Dodano box-sizing, aby zachować pełną szerokość wraz z paddingiem */
+    width: 50%; 
+    box-sizing: border-box; 
     padding-top: 2%;
 }
 
 .definicja{
     flex: 1;
-    width: 50%; /* Zmieniono szerokość na 100%, aby wypełnić dostępne miejsce */
-    box-sizing: border-box; /* Dodano box-sizing, aby zachować pełną szerokość wraz z paddingiem */
-    padding-top: 2%; /* Dodano dopełnienie od góry */
+    width: 50%; 
+    box-sizing: border-box; 
+    padding-top: 2%; 
 }
 
 .nowoczesnosc {
     flex: 1;
-    width: 50%; /* Zmieniono szerokość na 100%, aby wypełnić dostępne miejsce */
-    box-sizing: border-box; /* Dodano box-sizing, aby zachować pełną szerokość wraz z paddingiem */
-    padding-top: 2%; /* Dodano dopełnienie od góry */
+    width: 50%; 
+    box-sizing: border-box; 
+    padding-top: 2%; 
 }
 
-h1 {
+h1.h1atuty{
     font-size: 1.5em;
     text-align: center;
-    align-self: center; /* Wyrównaj wysokość h1 do środka */
-    padding-top: 5%; /* Dopełnienie od góry */
+    align-self: center; 
+    padding-top: 5%; 
     white-space: nowrap;
 }
 
-p {
+p.p1atuty{
     font-size: 1em;
     text-align: center;
 }
