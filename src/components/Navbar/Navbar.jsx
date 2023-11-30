@@ -33,6 +33,10 @@ const Navbar = () => {
                 setSpan1('Kalkulator ciężaru');
                 setSpan2('maksymalnego');
                 break;
+            case 'kalkulator-bmi':
+                setSpan1('Kalkulator');
+                setSpan2('BMI');
+                break;
             default:
                 setSpan1(null);
                 setSpan2(null);

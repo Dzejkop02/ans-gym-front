@@ -1,0 +1,15 @@
+.bmi-calc {
+    min-height: 100vh;
+    background-image: url('../../../public/zdj/bg-bmi-calculator-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12vh;
+}
+
+.bmi-calc__main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2vw;
+}

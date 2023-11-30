@@ -8,6 +8,7 @@ import Onas from './pages/onas';
 import Kontakt from './pages/kontakt';
 import NotFound from './pages/notfound';
 import MaxCalculator from "./pages/MaxCalculator";
+import BmiCalculator from "./pages/BmiCalculator";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/onas" element={<Onas />} />
                 <Route path="/kontakt" element={<Kontakt />} />
                 <Route path="/kalkulator-maksow" element={<MaxCalculator />} />
+                <Route path="/kalkulator-bmi" element={<BmiCalculator />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
