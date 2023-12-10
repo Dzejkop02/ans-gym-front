@@ -37,6 +37,10 @@ const Navbar = () => {
                 setSpan1('Kalkulator');
                 setSpan2('BMI');
                 break;
+            case 'cwiczenia':
+                setSpan1('Atlas');
+                setSpan2('Ćwiczeń');
+                break;
             default:
                 setSpan1(null);
                 setSpan2(null);

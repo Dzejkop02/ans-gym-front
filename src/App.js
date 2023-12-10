@@ -9,6 +9,7 @@ import Kontakt from './pages/kontakt';
 import NotFound from './pages/notfound';
 import MaxCalculator from "./pages/MaxCalculator";
 import BmiCalculator from "./pages/BmiCalculator";
+import Cwiczenia from "./pages/Cwiczenia";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/kontakt" element={<Kontakt />} />
                 <Route path="/kalkulator-maksow" element={<MaxCalculator />} />
                 <Route path="/kalkulator-bmi" element={<BmiCalculator />} />
+                <Route path="/cwiczenia" element={<Cwiczenia />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
