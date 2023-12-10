@@ -1,47 +1,86 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Exercise from "./Exercise/Exercise";
 import './CwiczeniaList.css';
 
 const CwiczeniaList = () => {
-    const exercise = 'barki';
+    const [selected, setSelected] = useState(null);
+    const [muscles, setMuscles] = useState(null);
+    const [exercises, setExercises] = useState('barki');
+
+    useEffect(() => {
+        (async () => {
+            const res = await fetch('http://localhost:3001/');
+            const data = await res.json();
+
+            setMuscles(data.musclesList)
+            setExercises(data.exercisesList)
+        })();
+    }, []);
+
+    useEffect(() => {
+        (async () => {
+            setExercises(null);
+
+            const res = selected
+                ? await fetch(`http://localhost:3001/exercise?muscleId=${selected.id}`)
+                : await fetch(`http://localhost:3001/exercise`);
+            const data = await res.json();
+
+            setExercises(data.exercisesList);
+        })();
+    }, [selected]);
+
+    const selectMuscleGroup = obj => {
+        if (selected?.id === obj.id) {
+            setSelected(null);
+        } else {
+            setSelected(obj)
+        }
+
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth',
+        })
+    }
+
+    if (!muscles || !exercises) {
+        return <div className="cwiczenia-list-wrapper"/>
+    }
 
     return <div className="cwiczenia-list-wrapper">
         <section className="cwiczenia-list">
             <nav className="cwiczenia-list__nav">
                 <ul className="cwiczenia-list__ul">
-                    <li className="cwiczenia-list__li cwiczenia-list__li--active">
-                        <p>Ćwiczenia</p>
-                        <p>na barki</p>
-                    </li>
-                    <li className="cwiczenia-list__li">
-                        <p>Ćwiczenia</p>
-                        <p>na barki</p>
-                    </li>
-                    <li className="cwiczenia-list__li">
-                        <p>Ćwiczenia</p>
-                        <p>na barki</p>
-                    </li>
-                    <li className="cwiczenia-list__li">
-                        <p>Ćwiczenia</p>
-                        <p>na barki</p>
-                    </li>
+                    {
+                        muscles.map(muscle => (
+                            <li key={muscle.id}
+                                className={muscle.id === selected?.id ? "cwiczenia-list__li cwiczenia-list__li--active" : "cwiczenia-list__li"}
+                                onClick={() => selectMuscleGroup(muscle)}>
+                                <p>Ćwiczenia</p>
+                                <p>na {muscle.name}</p>
+                            </li>
+                        ))
+                    }
                 </ul>
             </nav>
             <main className="cwiczenia-list__content">
-                <h2 className="cwiczenia-list__heading">Ćwiczenia <span>na {exercise}</span></h2>
+                {
+                    selected
+                        ? <h2 className="cwiczenia-list__heading">Ćwiczenia <span>na {selected.name}</span></h2>
+                        : <h2 className="cwiczenia-list__heading"><span>Wszystkie</span> Ćwiczenia</h2>
+                }
 
-                <Exercise name="Wyciskanie sztangi na ławce płaskiej"
-                          equipment="Sztanga"
-                          primaryMuscle="Klatka piersiowa"
-                          supportedMuscles={['triceps', 'mięśnie przednie barku']}
-                          url="https://www.youtube.com/embed/4Y2ZdHCOXok?si=TB1fXOKx_oy2TZXM"
-                />
-                <Exercise name="Wyciskanie sztangi na ławce płaskiej"
-                          equipment="sztanga"
-                          primaryMuscle="Klatka piersiowa"
-                          supportedMuscles={[]}
-                          url="https://www.youtube.com/embed/4Y2ZdHCOXok?si=TB1fXOKx_oy2TZXM"
-                />
+                {
+                    exercises.map(exercise => (
+                        <Exercise key={exercise.id}
+                                  name={exercise.name}
+                                  equipment={exercise.equipment}
+                                  primaryMuscle={exercise.primaryMuscle}
+                                  supportedMuscles={exercise.supportedMuscles}
+                                  url={exercise.ytUrl}
+                        />
+                    ))
+                }
             </main>
         </section>
     </div>;
