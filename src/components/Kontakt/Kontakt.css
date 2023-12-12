@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.kontakt a{
+/* .kontakt a{
     margin-right: 25%;
     margin-top: 3.2%;
     width: 30%;
@@ -20,7 +20,6 @@
     text-align: center;
     white-space: nowrap;
     text-decoration: none;
-    
 }
 
 .lewo{
@@ -32,4 +31,75 @@
     font-weight: bold;
     text-align: left;
     line-height: 2;
+} */
+
+.kontakt-calosc {
+    font-size: 22px;
+    width: 1000px;
+    margin: auto;
+    padding: 8vh 1vw;
+    display: flex;
+    flex-wrap: nowrap;
 }
+
+.kontakt-lewo {
+    margin: auto;
+}
+
+.kontakt-prawo {
+    margin: auto;
+}
+
+.kontakt a {
+    color: #ef233c;
+    text-decoration: none;
+    background-color: white;
+    border-radius:25px;
+    white-space: nowrap;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 1% 30px;
+    font-size: 30px;
+}
+
+.kontakt p {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 911px) {
+    .kontakt-calosc {
+        font-size: 22px;
+        width: 1000px;
+        margin: auto;
+        padding: 8vh 1vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .kontakt-lewo {
+        margin: auto;
+        text-align: center;
+    }
+
+    .kontakt-prawo {
+        margin-top: 20px;
+    }
+
+    .kontakt p {
+        text-align: center;
+    }
+    
+    .kontakt a {
+        color: #ef233c;
+        text-decoration: none;
+        background-color: white;
+        border-radius:25px;
+        white-space: nowrap;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+        padding: 1% 30px;
+        font-size: 30px;
+    }
+  }
