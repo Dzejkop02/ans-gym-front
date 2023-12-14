@@ -4,6 +4,7 @@ import Kontakt from "../components/Kontakt/Kontakt";
 import Kalkulatory from "../components/Kalkulatory/Kalkulatory";
 import Footer from '../components/Footer/Footer';
 import Map from '../components/Map/Map';
+import Karnet from '../components/Karnety/karnety';
 
 
 const Home = () => {
@@ -14,6 +15,9 @@ const Home = () => {
             </div>
             <div className="kontakt">
                 <Kontakt/>
+            </div>
+            <div className="karnety">
+                <Karnet/>
             </div>
             <div className="kalkulatory">
                 <Kalkulatory />
