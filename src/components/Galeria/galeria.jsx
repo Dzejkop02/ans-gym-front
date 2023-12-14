@@ -3,13 +3,13 @@ import './galeria.css'; // Zaimportuj plik ze stylami
 
 const Gallery = () => {
     return (
-        <div className="calosc">
-        <div className="top">
-            <h1>TAK TO U NAS WYGLĄDA !</h1>
-            <p>Przekonaj się i sprawdź sam</p>
-        </div>
-        <div className="gallery">
-        <div className="gallery-item">
+        <div class="calosc">
+    <div class="top">
+        <h1>TAK TO U NAS WYGLĄDA !</h1>
+        <p>Przekonaj się i sprawdź sam</p>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
             <img src="zdj/galeria-1.jpg" alt="" srcset="" />
         </div>
         <div className="gallery-item">
