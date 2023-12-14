@@ -7,25 +7,10 @@ const Footer = () => {
         <div className="footer">
             <div className="footer-left">
                 <h1>MASZ PYTANIE ?</h1>
-                    <p className="footerp">Nasza recepcja czeka na twój telefon</p>
-                    <p className="footerp">888234342</p>
-                    <p className="footerp">Siłownia ANS Mickiewicza 8</p>
-                    <p className="footerp">33-100 Tarnów</p>
-                <h1 className="footer-znajdz">ZNAJDŹ NAS NA: </h1>
-                <div className="footer-zdj">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/facebook.png" alt="fb" />
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/instagram.png" alt="ig" />
-                    </a>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/youtube.png" alt="yt"/>
-                    </a>
-                    <a href="https://pl.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/linkedin.png" alt="il"/>
-                    </a>
-                </div>
+                <p className="footerp">Nasza recepcja czeka na twój telefon</p>
+                <p className="footerp">888234342</p>
+                <p className="footerp">Siłownia ANS Mickiewicza 8</p>
+                <p className="footerp">33-100 Tarnów</p>
             </div>
             <div className="footer-right">
                 <h1 className="footer-right-h1">GODZINY OTWARCIA</h1>
@@ -43,12 +28,26 @@ const Footer = () => {
                         <td>8:00-21:00</td>
                     </tr>
                 </table>
-                <div className="footer-zdjr">
-                    <a href="https://www.youtube.com/watch?v=rrKSc6lHeC4" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/dumbbell.png" alt="db"/>
+                
+            </div>
+            <div className="footer-left-down">
+                <h1 className="footer-znajdz">ZNAJDŹ NAS NA: </h1>
+                <div className="footer-zdj">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/facebook.png" alt="fb" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/instagram.png" alt="ig" />
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/youtube.png" alt="yt"/>
+                    </a>
+                    <a href="https://pl.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="zdj/linkedin.png" alt="il"/>
                     </a>
                 </div>
             </div>
+            <img className="imgr" src="zdj/dumbbell.png" alt="db"/>
         </div>
     );
 };
