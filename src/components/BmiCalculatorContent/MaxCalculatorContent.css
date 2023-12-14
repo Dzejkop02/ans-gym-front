@@ -8,7 +8,7 @@
 }
 
 .bmi-calc__main {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     gap: 2vw;
@@ -25,7 +25,11 @@
 }
 
 .bmi-calc__heading {
-    font-size: 2em;
+    font-size: 2.6em;
+}
+
+.bmi-calc__h3 {
+    font-size: 1.7rem;
 }
 
 .bmi-calc__h3 span, .bmi-calc__h4 span {
@@ -41,12 +45,13 @@
 }
 
 .bmi-calc__calculator {
-    min-width: 280px;
+    min-width: 310px;
     text-align: center;
 }
 
 .bmi-calc__h4 {
     text-align: left;
+    font-size: 1.3rem;
 }
 
 .bmi-calc__grid {
@@ -95,7 +100,7 @@
 
 .bmi-calc__label {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.75em;
 }
 
 .bmi-calc__label--red {
@@ -120,7 +125,7 @@
 }
 
 .bmi-calc__list {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: left;
     margin-left: 1em;
 }
@@ -128,10 +133,11 @@
 .bmi-calc__p {
     color: white;
     margin-bottom: 1em;
+    font-size: 1.75rem;
 }
 
 .bmi-calc__p--small {
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 /* ///////// BMI INFO SECTION ////////// */
@@ -167,7 +173,7 @@
 }
 
 .bmi-info__p {
-    font-size: 1em;
+    font-size: 1.75rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -189,7 +195,7 @@
         display: inline-block;
     }
 
-    .bmi-calc__p {
+    .bmi-calc__p, .bmi-info__p {
         font-size: 1.4em;
     }
 }

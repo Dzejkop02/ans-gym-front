@@ -92,7 +92,7 @@ const BmiCalculatorContent = () => {
             <section className="bmi-info">
                 <div className="bmi-info__left">
                     <div className="bmi-info__left-content">
-                        <h2 className="bmi-info__h2">Czym jest <span>BMI</span> ?</h2>
+                        <h2 className="bmi-info__h2 bmi-calc__heading">Czym jest <span>BMI</span> ?</h2>
                         <p className="bmi-info__p">BMI jest jednym z ważnych wskaźników określających nasz stan
                             fizyczny, ale
                             niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik
