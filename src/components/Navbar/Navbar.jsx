@@ -37,6 +37,10 @@ const Navbar = () => {
                 setSpan1('Kalkulator');
                 setSpan2('BMI');
                 break;
+            case 'kalkulator-wody':
+                setSpan1('Kalkulator');
+                setSpan2('WODY');
+                break;
             case 'cwiczenia':
                 setSpan1('Atlas');
                 setSpan2('Ćwiczeń');
