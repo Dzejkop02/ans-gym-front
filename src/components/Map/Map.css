@@ -33,6 +33,46 @@
 
 .mright {
     width: 50%;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .mleft {
+        width: 50%; 
+        box-sizing: border-box;
+        padding: 3%; 
+        color: white;
+        font-size: 1.25em;
+        font-weight: bold;
+        flex-direction: column; 
+        padding-left: 18%; 
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .mleft {
+        width: 100%; 
+        box-sizing: border-box;
+        padding: 3%; 
+        color: white;
+        font-size: 1.25em;
+        font-weight: bold;
+        flex-direction: column; 
+        padding-left: 18%; 
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .mright {
+        margin-left: 18%;
+        width: 60vw;
+        height: 50vw;
+        padding-bottom: 5%;
+    }
 }
 
 
