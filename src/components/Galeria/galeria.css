@@ -1,31 +1,52 @@
-
 body {
     margin: 0;
-    font-family:Lalezar;
+    font-family: Lalezar;
+}
+
+.calosc {
+    text-align: center; /* Dodane dla wycentrowania tekstu */
+}
+
+.top {
+    background-color: #ef233c;
+    color: white;
+    text-align: center;
+    padding: 2%;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-image: url('../../../public/zdj/galeria-tlo.jpg');
     background-size: cover;
     background-position: center;
     padding: 10%;
+    background-repeat: repeat-y;
 }
 
 .gallery-item {
     background-color: #ddd; /* Placeholder color */
+    width: calc(33.33% - 2%); /* Dla trzech kolumn, z odstępem 20px */
+    margin: 1%; /* Odstęp między elementami */
+    box-sizing: border-box; /* Zapobiega dodatkowym marginesom i paddingom */
+    overflow: hidden; /* Ukrywa nadmiarowe treści */
 }
+
 .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.top{
-    background-color: #ef233c;
-    color: white;
-    text-align: center;
-    padding: 2%;
+
+@media screen and (max-width: 900px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* Dla dwóch kolumn na mniejszych ekranach */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-item {
+        width: calc(100% - 20px); /* Dla jednej kolumny na najmniejszych ekranach */
+    }
 }
