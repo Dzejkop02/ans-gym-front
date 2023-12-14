@@ -1,0 +1,96 @@
+.woda-main{
+    background-color: #EF233C;
+    color: #FFF;
+    height: fit-content;
+    font-size: 1vw;
+}
+
+.woda-main-1{
+    background-image: url(../../../public/zdj/globelet-reusable-uw9tZN5TJBU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    font-size: 200%;
+
+    height: fit-content;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 93% 100%, 7% 98%, 0 95%);
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.woda-main-2{
+    margin-top: 1em;
+
+    background-image: url(../../../public/zdj/victor-furtuna-Ia-eZdmkS9Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 200vw;
+    background-attachment: local;
+    background-position: center;
+    
+    font-size: 220%;
+
+    height: fit-content;
+    padding-bottom: 2em;
+    clip-path: polygon(6% 0, 93% 2%, 100% 4%, 100% 95%, 94% 98%, 5% 100%, 0 95%, 0 4%);
+}
+
+.woda-kalk{
+    width: 80%;
+    height: fit-content;
+
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: auto;
+    border-radius: 2em;
+    background: linear-gradient(180deg, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.6) 90%, rgba(0,0,0,1) 100%);
+}
+
+.woda-kalk-desc{
+    width: 90%;
+    margin: auto;
+}
+
+.woda-form{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.woda-form .btn{
+    width: 8em;
+    margin-top: 2em;
+}
+
+.woda-wynik{
+    margin-top: 2em;
+}
+
+.woda-wynik span{
+    color: #EF233C;
+}
+
+.woda-desc-cont{
+    margin-top: 2em;
+}
+
+
+.woda-info{
+    padding-top: 2em;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    color: #FFF;
+}
+
+.woda-main h1{
+    color: #EF233C;
+    font-size: 160%;
+}
+
+.woda-info p{
+    margin-top: 1em;
+}
+
+.woda-info ul{
+    margin-left: 2em;
+    margin-top: 1em;
+}
