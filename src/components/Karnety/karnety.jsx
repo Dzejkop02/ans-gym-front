@@ -7,13 +7,9 @@ const karnety = () => {
         <div className="Karnety">
             <div className="Karnety-Inline">
                 <div className="Silver">
-                    <div className="nazwa">
+                    <div className="karnet_type">
                         <h2>KARNET SILVER</h2>
-                    </div>
-                    <div className="platny">
                         <p>Płatny co miesiąc</p>
-                    </div>
-                    <div className="cena">
                         <h1>159zł</h1>
                     </div>
                     <ul>
@@ -32,13 +28,9 @@ const karnety = () => {
                     </div>
                 </div>
                 <div className="Gold">
-                    <div className="nazwa">
+                    <div className="karnet_type">
                         <h2>KARNET GOLD</h2>
-                    </div>
-                    <div className="platny">
                         <p>Płatny co miesiąc</p>
-                    </div>
-                    <div className="cena">
                         <h1>169zł</h1>
                     </div>
                     <ul>
@@ -60,13 +52,9 @@ const karnety = () => {
                     </div>
                 </div>
                 <div className="Platinum">
-                    <div className="nazwa">
+                    <div className="karnet_type">
                         <h2>KARNET PLATINUM</h2>
-                    </div>
-                    <div className="platny">
                         <p>Płatny co miesiąc</p>
-                    </div>
-                    <div className="cena">
                         <h1>189zł</h1>
                     </div>
                     <ul>
