@@ -19,6 +19,8 @@ const CwiczeniaList = () => {
 
     useEffect(() => {
         (async () => {
+            setExercises(null);
+
             const res = selected
                 ? await fetch(`http://localhost:3001/exercise?muscleId=${selected.id}`)
                 : await fetch(`http://localhost:3001/exercise`);
