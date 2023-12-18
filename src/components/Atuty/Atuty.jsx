@@ -21,7 +21,7 @@ const Atuty = () => {
                 </div>
                 <div className="definicja">
                     <img className="definicja" src="zdj/deal.png" alt="dl"/>
-                    <h1 className="h1atuty">Definicja biznesowa</h1>
+                    <h1 className="h1atuty-d">Definicja biznesowa</h1>
                     <p className="p1atuty">Tworzymy miejsca aktywnego spędzania czasu, budujące więzi społeczne w oparciu o kulturę sportową, by umożliwić rozwój ciała i wiele innych</p>
                 </div>
                 <div className="nowoczesnosc">
