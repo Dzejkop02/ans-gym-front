@@ -6,17 +6,17 @@ const KontaktPage = () => {
         <div>
             <div className="kontakt-main">
                 <div className="kontakt-guziki">
-                <button className="kontakt-btn">NAPISZ DO NAS !</button><br/>
-                <button className="kontakt-btn">ZADZWOŃ DO NAS !</button><br/>
-                <button className="kontakt-btn">TUTAJ NAS ZNAJDZIESZ !</button><br/>
+                <a href="#kontakt-info-jump" className="kontakt-btn">NAPISZ DO NAS !</a>
+                <a href="#kontakt-footer-jump" className="kontakt-btn">ZADZWOŃ DO NAS !</a>
+                <a href="#kontakt-map-jump" className="kontakt-btn">TUTAJ NAS ZNAJDZIESZ !</a>
                 </div>
             </div>
-            <div className="kontakt-info">
+            <div id="kontakt-info-jump" className="kontakt-info">
                 <h1>LOREM IPSUM IS SIMPLY</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
             </div>
             <div>
-                <div className="kontakt-mapa-info">
+                <div id="kontakt-map-jump" className="kontakt-mapa-info">
                     <h1>TUTAJ NAS ZNAJDZIESZ!</h1>
                     <p>
                     Przyjdź i sprawdź
@@ -33,6 +33,7 @@ const KontaktPage = () => {
                     />
                 </div>
             </div>
+            <div id="kontakt-footer-jump"></div>
         </div>
     );
 };

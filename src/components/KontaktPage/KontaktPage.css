@@ -7,9 +7,12 @@
 }
 
 .kontakt-guziki {
-position: absolute;
-top: 25em;
-left: 10%;
+    position: absolute;
+
+    top: 25em;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .kontakt-btn {
@@ -23,8 +26,10 @@ left: 10%;
     padding: 15px;
     margin-top: 1em;
     border-radius: 15px;
+    text-align: center;
 
     cursor: pointer;
+    text-decoration: none;
 }
 
 .kontakt-btn:hover {
@@ -60,4 +65,11 @@ left: 10%;
 
 .kontakt-mapa {
     height: 50em;
+}
+
+@media screen and (max-width: 900px) {
+    .kontakt-guziki {
+        left: 8%;
+
+    }
 }
