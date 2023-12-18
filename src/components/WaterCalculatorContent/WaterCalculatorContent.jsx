@@ -18,7 +18,7 @@ const MaxCalculatorContent = () => {
                         <h1>OBLICZ SWOJE ZAPOTRZEBOWANIE NA PŁYNY</h1>
                         <p>Chcesz dowiedzie się, ile wody dziennie potrzebujesz, by Twój organizm prawidłowo funkcjonował? skorzystaj z naszego kalkulatora wody online - to wygodne narzędzie, które pozwoli Ci szybko i dokładnie określi iloś wody na kg masy. Kalkluator picia wody online bierze pod uwagę masę ciała, a wynik uwzględnia zawartoś wody w produktach spożywczych.</p>
                         <form className='woda-form' onSubmit={handleFormSubmit}>
-                            <input className='input' type='number' placeholder='Waga' required value={weight || ''} onChange={e => setWeight(+e.target.value)}></input><br></br>
+                            <input className='input' type='number' min='0' placeholder='Waga' required value={weight || ''} onChange={e => setWeight(+e.target.value)}></input><br></br>
                             <button type="submit" className="btn">Oblicz</button>                     
                         </form>
                         <p className='woda-wynik'>Twoje dzienne zapotrzebowanie na wodę wynosi: <span className='woda-wynik'>{result}</span> ml</p>
