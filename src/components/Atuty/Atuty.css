@@ -4,6 +4,7 @@
     font-size: 1em;
     font-family: Lalezar;
     margin-top: auto;
+    text-align: center;
 }
 
 .acontent {
@@ -38,7 +39,6 @@ h1.h1ekspansja{
     box-sizing: border-box; 
     padding-top: 2%;
     text-align: center;
-    
 }
 
 .definicja{
@@ -58,9 +58,16 @@ h1.h1ekspansja{
 h1.h1atuty{
     font-size: 1.5em;
     text-align: center;
-    align-self: center; 
     padding-top: 5%; 
     white-space: nowrap;
+}
+
+h1.h1atuty-d{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 5%; 
+    white-space: nowrap;
+    margin-left: -7%;
 }
 
 p.p1atuty{
@@ -75,6 +82,7 @@ img.doswiadczenie{
 img.ekspansja{
     width: 110%;
     margin-bottom: -8.5%;
+    margin-top: -5%;
 }
 
 img.definicja{
@@ -85,3 +93,12 @@ img.nowoczesnosc{
     width: 100%;
 }
 
+@media screen and (max-width: 1450px) {
+    .acontent {
+        padding: 5% 10%; 
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); 
+        justify-items: center; 
+        padding-bottom: 3%;
+    }
+}
