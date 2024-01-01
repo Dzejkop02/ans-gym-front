@@ -1,6 +1,6 @@
 .bmi-calc {
     min-height: 100vh;
-    background-image: url('../../../public/zdj/bg-bmi-calculator-1.jpg');
+    background-image: url('../../../public/zdj/bg-bmi-calculator-1.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +142,7 @@
 
 /* ///////// BMI INFO SECTION ////////// */
 .bmi-info {
-    background-image: url('../../../public/zdj/bg-bmi-calculator-2.jpg');
+    background-image: url('../../../public/zdj/bg-bmi-calculator-2.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
