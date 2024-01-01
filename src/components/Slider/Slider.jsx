@@ -3,12 +3,12 @@ import './Slider.css';
 
 const Slider = () => {
   const items = [
-    '/zdj/slider1.jpg',
-    '/zdj/slider2.jpg',
-    '/zdj/slider3.jpg',
-    '/zdj/slider4.jpg',
-    '/zdj/slider5.jpg',
-    '/zdj/slider6.jpg',
+    '/zdj/slider1.webp',
+    '/zdj/slider2.webp',
+    '/zdj/slider3.webp',
+    '/zdj/slider4.webp',
+    '/zdj/slider5.webp',
+    '/zdj/slider6.webp',
   ];
 
   const [active, setActive] = useState(0);
