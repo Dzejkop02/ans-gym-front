@@ -11,10 +11,12 @@ import MaxCalculator from "./pages/MaxCalculator";
 import BmiCalculator from "./pages/BmiCalculator";
 import Cwiczenia from "./pages/Cwiczenia";
 import WaterCalculator from "./pages/WaterCalculator";
+import Tytul from "./components/Tytul/Tytul";
 
 function App() {
   return (
     <div className="App">
+      <Tytul />
         <Navbar />
         <div>
             <Routes>
