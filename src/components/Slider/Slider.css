@@ -31,24 +31,37 @@ body{
     height: 100vh;
     object-fit: cover;
 }
-.buttons{
+.buttonsl{
     position: absolute;
-    top: 45%;
-    left: 5%;
+    top: 0%;
+    left: -10%;
     width: 90%;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
-.buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: black;
+.buttonsr{
+    position: absolute;
+    top: 0%;
+    left: 92%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.buttonsl button:hover, .buttonsr button:hover{
+    background-color: white;
     opacity: 0.2;
-    color: gray;
+}
+.buttonsl button, .buttonsr button{
+    width: 20%;
+    height: 100vh;
+    border-radius: 50%;
+    background-color: lightgray;
+    opacity: 0.03;
     border: none;
     font-weight: bold;
-
+    cursor: pointer;
 }
 .dots{
     position: absolute;
@@ -69,6 +82,7 @@ body{
     margin: 20px;
     border-radius: 20px;
     transition: 0.4s;
+    cursor: pointer;
 }
 .dots li.active{
     width: 30px;

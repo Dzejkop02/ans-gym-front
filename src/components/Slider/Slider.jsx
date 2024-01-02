@@ -59,8 +59,10 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="buttons">
+      <div className="buttonsl">
         <button id='prev' onClick={prevslide}>&lt;</button>
+      </div>
+      <div className="buttonsr">
         <button id='next' onClick={nextslide}>&gt;</button>
       </div>
       <ul className="dots">
