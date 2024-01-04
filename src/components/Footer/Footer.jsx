@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.css';
 
+const MenuIcon = (props) =>(
+    <svg xmlns="zdj/facebook.svg" fill={props.fill} className={props.class}></svg>
+)
+
+
 const Footer = () => {
     return(
         <div className="footer">
@@ -33,17 +38,20 @@ const Footer = () => {
             <div className="footer-left-down">
                 <h1 className="footer-znajdz">ZNAJDŹ NAS NA: </h1>
                 <div className="footer-zdj">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/facebook.png" alt="fb" />
+                    {/* <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <MenuIcon fill="black"/>
+                    </a> */}
+                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                     <img src="zdj/facebook.svg" alt="ig" />
                     </a>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/instagram.png" alt="ig" />
+                        <img src="zdj/instagram.svg" alt="ig" />
                     </a>
                     <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/youtube.png" alt="yt"/>
+                        <img src="zdj/youtube.svg" alt="yt"/>
                     </a>
                     <a href="https://pl.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="zdj/linkedin.png" alt="il"/>
+                        <img src="zdj/linkedin.svg" alt="il"/>
                     </a>
                 </div>
             </div>
