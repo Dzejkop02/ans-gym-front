@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './Atuty.css';
 
 const Atuty = () => {
     return(
         <div className="atuty">
             <div className="divonasimg">
-                <img className="onasimg" src="zdj/victor-freitas-nlZTjUZX2qo-unsplash.jpg" alt="vf"/>
+                <img className="onasimg" src="zdj/victor-freitas-nlZTjUZX2qo-unsplash.webp" alt="vf"/>
             </div>
             <div className="acontent">
                 <div className="doswiadczenie">
