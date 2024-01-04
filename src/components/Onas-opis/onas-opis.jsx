@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './onas-opis.css';
 
 const Onasopis = () => {

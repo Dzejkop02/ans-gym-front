@@ -10,40 +10,40 @@ const Gallery = () => {
     </div>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="zdj/galeria-1.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-1.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-2.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-2.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-3.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-3.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-1.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-1.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-2.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-2.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-3.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-3.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-1.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-1.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-2.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-2.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-3.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-3.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-1.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-1.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-2.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-2.webp" alt="" srcset="" />
         </div>
         <div className="gallery-item">
-            <img src="zdj/galeria-3.jpg" alt="" srcset="" />
+            <img src="zdj/galeria-3.webp" alt="" srcset="" />
         </div>
 
         </div>
