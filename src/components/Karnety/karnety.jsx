@@ -1,8 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import './karnety.css';
 
 
-const karnety = () => {
+const Karnety = () => {
+    const [animate, setAnimate] = useState(false);
+
+    const addTicket = async (ticketName) => {
+        const response = await fetch('http://localhost:3001/ticket', {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ticketName}),
+        });
+
+        const data = await response.json();
+
+        if (data.ok) {
+            setAnimate(true);
+
+            setTimeout(() => {
+                setAnimate(false);
+            }, 1600);
+        }
+    }
+
     return (
         <div className="Karnety">
             <div className="Karnety-Inline">
@@ -24,7 +47,7 @@ const karnety = () => {
                         <li className="silverli">możliwość dokonania rezerwacji maksymalnie na 2 zajęcia fitness dziennie</li>
                     </ul>
                     <div className="wybiera">
-                        <h2>KUP TERAZ</h2>
+                        <h2 onClick={addTicket.bind(this, 'Silver')}>KUP TERAZ</h2>
                     </div>
                 </div>
                 <div className="Gold">
@@ -48,7 +71,7 @@ const karnety = () => {
                         <li className="goldli">1 godzina treningu personalnego co 6 miesięcy</li>
                     </ul>
                     <div className="wybiera">
-                        <h2>KUP TERAZ</h2>
+                        <h2 onClick={addTicket.bind(this, 'Gold')}>KUP TERAZ</h2>
                     </div>
                 </div>
                 <div className="Platinum">
@@ -73,9 +96,12 @@ const karnety = () => {
                         <li className="platinumli">możliwość rezygnacji z zajęć fitness do 15 minut przed rozpoczęciem</li>
                     </ul>
                     <div className="wybiera">
-                        <h2>KUP TERAZ</h2>
+                        <h2 onClick={addTicket.bind(this, 'Platinum')}>KUP TERAZ</h2>
                     </div>
                 </div>
+            </div>
+            <div className="success-box">
+                <img src="zdj/success-confetti.png" className={`success-img ${animate? 'animate' : ''}`}/>
             </div>
         </div>
         
@@ -83,4 +109,4 @@ const karnety = () => {
          
   );
 };
-export default karnety;
+export default Karnety;
