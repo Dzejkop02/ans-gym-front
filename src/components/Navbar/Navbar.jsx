@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import './Navbar.css';
+import Login from '../Login/Login';
 
 const Navbar = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const [span1, setSpan1] = useState(null);
     const [span2, setSpan2] = useState(null);
@@ -12,6 +14,8 @@ const Navbar = () => {
 
     const [bgBlack, setBgBlack] = useState(false);
     window.addEventListener('scroll', () => setBgBlack(window.scrollY >= 200));
+    
+    const [isLoginComponentVisible, setLoginComponentVisible] = useState(false);
 
     useEffect(() => {
         const pathname = location.pathname.slice(1);
@@ -60,6 +64,11 @@ const Navbar = () => {
         setMobileMenuOpen(false);
     };
 
+    const showLoginComponent = () => {
+        setLoginComponentVisible(true);
+       
+    };
+
     return (
         <div className="nav" style={bgBlack ? { backgroundColor: 'black' } : {}}>
             <div className="nav__container">
@@ -85,6 +94,13 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link className={activeSection === 'kontakt' ? 'active nav__a' : 'nav__a'} to="/kontakt">KONTAKT</Link>
+                            </li>
+                            <li>
+                                <Link className={activeSection === 'kontakt' ? 'active nav__a' : 'nav__a'}
+                                    onClick={showLoginComponent}
+                                >
+                                    logowanie
+                                </Link>
                             </li>
                         </ul>
                     )}
@@ -113,10 +129,21 @@ const Navbar = () => {
                             <li>
                                 <Link to="/kontakt" onClick={closeMobileMenu} className={activeSection === 'kontakt' ? 'active nav__a' : 'nav__a'}>KONTAKT</Link>
                             </li>
+                            <li>
+                                <Link
+                                    onClick={() => {
+                                        showLoginComponent();
+                                        closeMobileMenu();
+                                    }}
+                                >
+                                    logowanie
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
             )}
+            {isLoginComponentVisible && <Login setLoginComponentVisible={setLoginComponentVisible}/>}
         </div>
     );
 };
