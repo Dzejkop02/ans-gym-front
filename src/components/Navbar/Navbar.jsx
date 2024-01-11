@@ -64,9 +64,19 @@ const Navbar = () => {
         setMobileMenuOpen(false);
     };
 
-    const showLoginComponent = () => {
-        setLoginComponentVisible(true);
-       
+
+    const toggleLoginComponent = () => {
+        setLoginComponentVisible((prevState) => !prevState);
+      
+        // Aktualizuj kolor ikony
+        setPersonIconColor((prevState) => (prevState === 'white' ? 'red' : 'white'));
+      };
+
+
+    const [personIconColor, setPersonIconColor] = useState('white');
+
+    const styles = {
+        fill: 'red'
     };
 
     return (
@@ -96,10 +106,23 @@ const Navbar = () => {
                                 <Link className={activeSection === 'kontakt' ? 'active nav__a' : 'nav__a'} to="/kontakt">KONTAKT</Link>
                             </li>
                             <li>
-                                <Link className={activeSection === 'kontakt' ? 'active nav__a' : 'nav__a'}
-                                    onClick={showLoginComponent}
-                                >
-                                    logowanie
+                            <Link
+                                className="nav__a_person"
+                                onClick={toggleLoginComponent}
+                            >
+                                    <svg
+                                        className="personIcon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        id="person"
+                                        fill={personIconColor}
+                                        style={isLoginComponentVisible ? styles : null}
+                                    >
+                                        <path
+                                            className="personIconPath"
+                                            d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 8a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"
+                                        />
+                                    </svg>
                                 </Link>
                             </li>
                         </ul>
@@ -132,11 +155,11 @@ const Navbar = () => {
                             <li>
                                 <Link
                                     onClick={() => {
-                                        showLoginComponent();
+                                        toggleLoginComponent();
                                         closeMobileMenu();
                                     }}
                                 >
-                                    logowanie
+                                    LOGOWANIE
                                 </Link>
                             </li>
                         </ul>
@@ -149,3 +172,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
