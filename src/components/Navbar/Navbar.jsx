@@ -11,11 +11,24 @@ const Navbar = () => {
     const [span2, setSpan2] = useState(null);
     const [activeSection, setActiveSection] = useState('home');
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [loggedIn, setLoggedIn] = useState(false);
 
     const [bgBlack, setBgBlack] = useState(false);
     window.addEventListener('scroll', () => setBgBlack(window.scrollY >= 200));
     
     const [isLoginComponentVisible, setLoginComponentVisible] = useState(false);
+
+    useEffect( () => {
+        (async() => {
+            const response = await fetch('http://localhost:3001/auth', {
+                credentials: 'include',
+            });
+
+            const data = await response.json();
+
+            setLoggedIn(data.loggedIn);
+        })();
+    }, [location]);
 
     useEffect(() => {
         const pathname = location.pathname.slice(1);
@@ -106,10 +119,11 @@ const Navbar = () => {
                                 <Link className={activeSection === 'kontakt' ? 'active nav__a' : 'nav__a'} to="/kontakt">KONTAKT</Link>
                             </li>
                             <li>
-                            <Link
-                                className="nav__a_person"
-                                onClick={toggleLoginComponent}
-                            >
+                                <Link
+                                    className="nav__a_person"
+                                    onClick={loggedIn ? null : toggleLoginComponent}
+                                    to={loggedIn ? "/profil" : null}
+                                >
                                     <svg
                                         className="personIcon"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -154,10 +168,11 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link
-                                    onClick={() => {
+                                    onClick={loggedIn ? closeMobileMenu : () => {
                                         toggleLoginComponent();
                                         closeMobileMenu();
                                     }}
+                                    to={loggedIn ? "/profil" : null}
                                 >
                                     LOGOWANIE
                                 </Link>
