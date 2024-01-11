@@ -6,79 +6,131 @@ body {
 .login-calosc {
   position: fixed;
   width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   
-  .login-background {
-    width: 32%;
-    height: 75%;
-    padding: 3%;
-    background: linear-gradient(#ef233c 0%, black 105%);
-    text-align: center;
-    border-radius: 2.5em;
-  }
+.login-background {
+  width: 32%;
+  height: 75%;
+  padding: 3%;
+  background: linear-gradient(#ef233c 0%, black 120%);
+  text-align: center;
+  border-radius: 2.5em;
+}
 .login-headicon{
-    width: 35%;
-    margin-bottom: 5%;
-  }
+  width: 35%;
+  margin-bottom: 5%;
+}
   
-  .login-group {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
+.login-group {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
     
-  }
-  
- .login-input{
-    box-sizing: border-box;
-    border-radius: 2em;
-    background-color: darkred;
-    width: 60%;
-    height: 20%;
-    padding: 0.5em;
-    font-weight: bold;
-    font-size: large;
- }
-  .login-icon {
-    width: 100%;
-    max-width: 100px;
-  }
-  .login-radio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-  }
-.login-a{
-    padding-left: 3%;
-    color: white;
+}
+input[type="checkbox"] {
+  display: none;
   }
 
+
+#checkbox1 + label {
+  position: relative;
+  padding-left: 20px; 
+  color: white;
+}
+
+#checkbox1 + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px; 
+  height: 10px;
+  border: 2px solid black;
+  background-color:rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-top: 4px;
+}
+
+#checkbox1:checked + label::before {
+  background-color: black;
+  border-color: black 20%;
+}
+  
+#email1, #password1{
+  box-sizing: border-box;
+  border-radius: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 20%;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: large;
+}
+.login-a{
+  padding-left: 3%;
+  color: white;
+}
 input:focus
 {
-    outline: none;
+  outline: none;
 }
-.login-zaloguj{
-    background-color: darkred;
-    border-radius: 2em;
-    width: 30%;
-    height: 20%;
-    padding: 0.5em;
-    font-weight: bold;
-    font-size: large;
-    color: white;
-    margin: 2%;
+#register1, #submit1{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2em;
+  width: 30%;
+  height: 20%;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  margin: 2%;
     
 }
-.login-zaloguj:hover{
-    background-color: black;
-    cursor: pointer;
+#register1:hover, #submit1:hover{
+  background-color: black;
+  cursor: pointer;
+
+}
+#username1, #username2, #password3, #email2, #password2{
+  box-sizing: border-box;
+  border-radius: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 20%;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 2%;
+}
+.obsluga{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#login2, #register2{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2em;
+  width: 60%;
+  height: 20%;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  margin: 1%;
+    
+}
+#login2:hover, #register2:hover{
+  background-color: black;
+  cursor: pointer;
 
 }
