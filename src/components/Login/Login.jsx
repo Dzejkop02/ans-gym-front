@@ -37,6 +37,9 @@ const Login = (props) => {
       if (data.ok) {
         // Logowanie udane, możesz dodać dodatkowe obsługi po udanym zalogowaniu
         console.log('Logowanie udane:', data);
+
+        // Zmiana zachowania ikony w Navbarze
+        props.setLoggedIn(true);
       } else {
         // Obsługa błędu logowania
         console.error('Błąd logowania:', data.error || 'Wystąpił błąd podczas logowania.');

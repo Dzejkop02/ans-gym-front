@@ -181,7 +181,7 @@ const Navbar = () => {
                     </div>
                 </div>
             )}
-            {isLoginComponentVisible && <Login setLoginComponentVisible={setLoginComponentVisible}/>}
+            {isLoginComponentVisible && <Login setLoggedIn={setLoggedIn} setLoginComponentVisible={setLoginComponentVisible}/>}
         </div>
     );
 };
