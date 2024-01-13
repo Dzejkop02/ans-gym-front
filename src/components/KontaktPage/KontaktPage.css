@@ -49,12 +49,6 @@
     color: #EF233C;
 }
 
-.kontakt-info p{
-    margin: auto;
-    width: 65%;
-    padding-bottom: 1em;
-}
-
 .kontakt-mapa-info {
     background-color: #EF233C;
     text-align: center;
@@ -67,9 +61,78 @@
     height: 50em;
 }
 
+#kontakt-info-jump, #kontakt-map-jump {
+    height: 90px;
+    background-color: #000;
+}
+
+.kontakt-form {
+    width: 80%;
+    margin: auto;
+}
+
+.kontakt-input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 0.5em 0;
+    font-family: inherit;
+    background-color: #000;
+    font-size: 0.9rem;
+    width: 50%;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.kontakt-input::placeholder, .kontakt-textarea::placeholder {
+    color: #fff;
+}
+
+.kontakt-input:focus, .kontakt-textarea:focus {
+    border-bottom: 2px solid #ef233c;
+}
+
+.kontakt-textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 0.5em 0;
+    font-family: inherit;
+    background-color: #000;
+    font-size: 0.9rem;
+    width: 50%;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.btn-kontakt {
+    background-color: #ef233c;
+    border: 2px solid white;
+    /* border-radius: 999px; */
+    padding: 0.5em 1em;
+    font-size: 1.25rem;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    margin-top: 20px;
+    
+}
+
+.btn-kontakt:hover {
+    background-color: #ee3b55;
+}
+
 @media screen and (max-width: 900px) {
     .kontakt-guziki {
         left: 8%;
+    }
 
+    .kontakt-input, .kontakt-textarea, .kontakt-btn {
+        width: 90%;
     }
 }

@@ -1,27 +1,52 @@
 import React from "react";
 import './KontaktPage.css';
+import emailjs from '@emailjs/browser'
 
 const KontaktPage = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+        
+        emailjs.sendForm('service_3904cx9', 'template_0w2fnhd', e.target, 'G7TxIeuYH7z3WhS9K')
+    }
+
     return(
         <div>
             <div className="kontakt-main">
                 <div className="kontakt-guziki">
                 <a href="#kontakt-info-jump" className="kontakt-btn">NAPISZ DO NAS !</a>
-                <a href="#kontakt-footer-jump" className="kontakt-btn">ZADZWOŃ DO NAS !</a>
                 <a href="#kontakt-map-jump" className="kontakt-btn">TUTAJ NAS ZNAJDZIESZ !</a>
+                <a href="#kontakt-footer-jump" className="kontakt-btn">ZADZWOŃ DO NAS !</a>
                 </div>
             </div>
-            <div id="kontakt-info-jump" className="kontakt-info">
-                <h1>LOREM IPSUM IS SIMPLY</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
+
+
+
+            <div id="kontakt-info-jump"></div>
+            <div className="kontakt-info">
+                <h1>NAPISZ DO NAS</h1>
+                <form className="kontakt-form" onSubmit={sendEmail}>
+                    <input className="kontakt-input" name="name_from" required type="text" placeholder="Imię"></input><br/>
+                    <input className="kontakt-input" name="email_from"required type="email" placeholder="Twój adres E-mail"></input><br/>
+
+                    <input className="kontakt-input" name="email_title" required type="text" placeholder="Temat"></input><br/>
+                    <textarea className="kontakt-textarea" name="message" required rows={5} placeholder="Wiadomość"></textarea><br/>
+                    <input className="btn-kontakt" type="submit" value={"Wyślij zapytanie"}></input>
+                </form>
             </div>
+
+
+
             <div>
-                <div id="kontakt-map-jump" className="kontakt-mapa-info">
+                <div id="kontakt-map-jump"></div>
+                <div className="kontakt-mapa-info">
                     <h1>TUTAJ NAS ZNAJDZIESZ!</h1>
                     <p>
                     Przyjdź i sprawdź
                     </p>
                 </div>
+
+
+
                 <div className="kontakt-mapa">
                     <iframe
                     title="Nasza lokacja!"
