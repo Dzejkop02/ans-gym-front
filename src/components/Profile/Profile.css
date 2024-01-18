@@ -1,0 +1,98 @@
+.profil-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../../../public/zdj/fitness.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.profil {
+    display: flex;
+    color: white;
+    font-family: Lalezar;
+    margin-top: auto;
+    height: 100vh;
+    padding-top: 10vw;
+    
+    
+  }
+
+.profil-left {
+    flex: 1;
+    text-align: left;
+    padding-left: 20%;
+    font-size: 2em;
+    padding-top: 10%;
+}
+
+.profil-up {
+    
+
+}
+
+.profil-down {
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.user-img{
+    width: 13%;
+}
+
+p{
+    
+}
+
+p.red{
+    color: #ef233c;
+    padding-left: 2%;
+}
+
+p.grey{
+    color: grey;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1vw;
+    background-color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+    .acontent {
+        padding: 5% 10%; 
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); 
+        justify-items: center; 
+        padding-bottom: 3%;
+    }
+    .mleft{
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .acontent {
+        padding: 5% 0%; 
+        display: grid;
+        grid-template-columns: repeat(1, 4fr); 
+        justify-items: center; 
+        padding-bottom: 4%;
+    }
+    .mleft{
+        text-align: center;
+        
+    }
+    
+}
