@@ -27,7 +27,7 @@ const Profile = () => {
                     setUserData(data);
                 } else {
                     // W przeciwnym razie, przekieruj użytkownika na stronę logowania
-                    window.location.href = '/login'; // Załóżmy, że masz stronę logowania na "/login"
+                    window.location.href = '/'; // Załóżmy, że masz stronę logowania na "/login"
                 }
             } catch (error) {
                 console.error('Wystąpił błąd podczas pobierania danych użytkownika:', error);
