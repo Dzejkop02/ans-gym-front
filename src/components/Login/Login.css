@@ -134,3 +134,24 @@ input:focus
   cursor: pointer;
 
 }
+.login-background-success{
+  width: 32%;
+  color: white;
+  padding: 3%;
+  background: linear-gradient(#ef233c 0%, black 120%);
+  text-align: center;
+  border-radius: 2.5em;
+  box-shadow: white  0px 0px 20px;
+}
+.login-background-error{
+  width: 32%;
+  color: white;
+  padding: 3%;
+  background: linear-gradient(#ef233c 0%, black 120%);
+  text-align: center;
+  border-radius: 2.5em;
+  box-shadow: red  0px 0px 20px;
+}
+.h{
+  color: white;
+}

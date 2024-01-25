@@ -5,6 +5,10 @@ const Login = (props) => {
   
   const [isLoginMode, setLoginMode] = useState(true);
   const [isLoginActive, setLoginActive] = useState(true);
+  const [loginSuccess, setLoginSuccess] = useState(false);
+  const [loginError, setLoginError] = useState(false);
+  const [registerSuccess, setregisterSuccess] = useState(false);
+  const [registerError, setregisterError] = useState(false);
   const [error, setError] = useState('');
 
   const handleOverlayClick = (event) => {
@@ -40,15 +44,38 @@ const Login = (props) => {
 
         // Zmiana zachowania ikony w Navbarze
         props.setLoggedIn(true);
+
+        setLoginSuccess(true);
+
+        setTimeout(() => {
+          props.setLoginComponentVisible(false);
+        }, 3000);
+        
       } else {
         // Obsługa błędu logowania
         console.error('Błąd logowania:', data.error || 'Wystąpił błąd podczas logowania.');
+
+        setLoginError(true);
+
+        setTimeout(() => {
+          setLoginError(false);
+        }, 3000);
       }
 
     } catch (error) {
       console.error('Wystąpił błąd podczas logowania:', error);
     }
   };
+
+  if (loginSuccess) {
+    return (
+      <div className='login-calosc' onClick={handleOverlayClick}>
+        <div className='login-background-success'>
+          <h1>Zalogowano poprawnie!</h1>
+        </div>
+      </div>
+    );
+  }
 
   const handleFormRegister = async (event) => {
     event.preventDefault();
@@ -78,7 +105,22 @@ const Login = (props) => {
       if (data.ok) {
         // Rejestracja udana, możesz dodać dodatkowe obsługi po udanej rejestracji
         console.log('Rejestracja udana:', data);
+
+        setregisterSuccess(true);
+
+        setTimeout(() => {
+          setregisterSuccess(false); 
+          setLoginActive(true);
+        }, 1000);
+
       } else {
+
+        setregisterError(true);
+
+        setTimeout(() => {
+          setregisterError(false);
+        }, 3000);
+
         setError(data.error || 'Wystąpił błąd podczas rejestracji.');
       }
 
@@ -86,31 +128,43 @@ const Login = (props) => {
       console.error('Wystąpił błąd podczas rejestracji:', error);
     }
   };
+  if (registerSuccess) {
+    return (
+      <div className='login-calosc' onClick={handleOverlayClick}>
+        <div className='login-background-success'>
+          <h1>Zarejestrowano poprawnie!</h1>
+        </div>
+      </div>
+    );
+  }
   if (isLoginActive) {
     return (
       <div className='login-calosc' onClick={handleOverlayClick}>
       <div className='login-background'>
           <img className='login-headicon' src="zdj/user-2.png" alt="" />
+          
       <form onSubmit={handleFormLogin}>
 
-          <div class="login-group">
+          <div className="login-group">
           <label for="email1"><img className='login-icon' src="zdj/icons8-person-64.png" alt="a" /></label>
           <input type="email" id="email1" name="username" placeholder="Login"></input>
           </div>
        
-          <div class="login-group">
+          <div className="login-group">
           <label for="password1"><img className='login-icon' src="zdj/icons8-password-50.png" alt="b" /></label>
           <input type="password" id="password1" name="username" placeholder="Hasło"></input>
           </div>
        <br />
         <div className='login-checkbox'>
           <input  type="checkbox" id="checkbox1" name="username" ></input>
-          <label  for="checkbox1">Zapamiętaj mnie:</label>
+          <label  for="checkbox1">Zapamiętaj mnie</label>
         <a className='login-a' href="">Zapomniałeś hasła</a>
         </div>
         
         <button type="button" id='register1' onClick={()=> setLoginActive(false)}>Zarejestruj się</button>
         <button type="submit" id='submit1'>Zaloguj się</button>
+        <br />
+        {loginError && <h2 className='h'>Niepoprawne dane!</h2>}
         
       </form>
       </div>
@@ -121,6 +175,7 @@ const Login = (props) => {
       <div className='login-calosc' onClick={handleOverlayClick}>
       <div className='login-background'>
           <img className='login-headicon' src="zdj/personal-data.png" alt="" />
+          
       <form onSubmit={handleFormRegister}>
 
           <input type="text" name="firstname" id="username1" placeholder="Imie"></input>
@@ -139,6 +194,8 @@ const Login = (props) => {
         <button type="submit" id='register2' >Zarejestruj się</button>
         <button type="button" id='login2' onClick={()=> setLoginActive(true)}>Masz konto ? Zaloguj się</button>
         </div>
+
+        {registerError && <h2 className='h'>Niepoprawne dane!</h2>}
         
       </form>
       </div>
