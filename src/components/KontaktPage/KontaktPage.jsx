@@ -4,10 +4,8 @@ import emailjs from '@emailjs/browser'
 import { useEffect, useState } from "react";
 
 const KontaktPage = () => {
-    const [userData, setUserData] = useState({
-        email: '',
-        firstName: '',
-    });
+    const [userEmail, setUserEmail] = useState("");
+    const [userName, setUserName] = useState("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -19,7 +17,8 @@ const KontaktPage = () => {
                 const data = await response.json();
 
                 if (data.loggedIn) {
-                    setUserData(data);
+                    setUserEmail(data.email);
+                    setUserName(data.firstName);
                 } else {
                     // nic
                 }
@@ -59,8 +58,8 @@ const KontaktPage = () => {
             <div className="kontakt-info">
                 <h1>NAPISZ DO NAS</h1>
                 <form className="kontakt-form" id="kontakt-form" onSubmit={sendEmail}>
-                    <input className="kontakt-input" name="name_from" required type="text" placeholder="Imię" value={userData.firstName}></input><br/>
-                    <input className="kontakt-input" name="email_from"required type="email" placeholder="Twój adres E-mail" value={userData.email}></input><br/>
+                    <input className="kontakt-input" name="name_from" required type="text" placeholder="Imię" value={userName} onChange={(e) => setUserName(e.target.value)}></input><br/>
+                    <input className="kontakt-input" name="email_from"required type="email" placeholder="Twój adres E-mail" value={userEmail} onChange={(e) => setUserEmail(e.target.value)}></input><br/>
 
                     <input className="kontakt-input" name="email_title" required type="text" placeholder="Temat"></input><br/>
                     <textarea className="kontakt-textarea" name="message" required rows={5} placeholder="Wiadomość"></textarea><br/>
