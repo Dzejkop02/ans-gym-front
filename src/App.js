@@ -12,6 +12,7 @@ import BmiCalculator from "./pages/BmiCalculator";
 import Cwiczenia from "./pages/Cwiczenia";
 import WaterCalculator from "./pages/WaterCalculator";
 import Tytul from "./components/Tytul/Tytul";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/kalkulator-bmi" element={<BmiCalculator />} />
                 <Route path="/kalkulator-wody" element={<WaterCalculator />} />
                 <Route path="/cwiczenia" element={<Cwiczenia />} />
+                <Route path="/profil" element={<ProfilePage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
