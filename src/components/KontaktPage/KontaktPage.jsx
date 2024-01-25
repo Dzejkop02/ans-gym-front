@@ -1,12 +1,48 @@
 import React from "react";
 import './KontaktPage.css';
 import emailjs from '@emailjs/browser'
+import { useEffect, useState } from "react";
 
 const KontaktPage = () => {
+    const [userData, setUserData] = useState({
+        email: '',
+        firstName: '',
+    });
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3001/auth', {
+                    credentials: 'include',
+                });
+
+                const data = await response.json();
+
+                if (data.loggedIn) {
+                    setUserData(data);
+                } else {
+                    // nic
+                }
+            } catch (error) {
+                console.error('Wystąpił błąd podczas pobierania danych użytkownika:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const [isSent, setIsSent] = useState(false)
+
     const sendEmail = (e) => {
         e.preventDefault();
         
         emailjs.sendForm('service_3904cx9', 'template_0w2fnhd', e.target, 'G7TxIeuYH7z3WhS9K')
+        document.getElementById("kontakt-form").reset();
+        
+        setIsSent(true)
+        setTimeout(() => {
+            setIsSent(false)
+          }, 5000);
     }
 
     return(
@@ -19,19 +55,19 @@ const KontaktPage = () => {
                 </div>
             </div>
 
-
-
             <div id="kontakt-info-jump"></div>
             <div className="kontakt-info">
                 <h1>NAPISZ DO NAS</h1>
-                <form className="kontakt-form" onSubmit={sendEmail}>
-                    <input className="kontakt-input" name="name_from" required type="text" placeholder="Imię"></input><br/>
-                    <input className="kontakt-input" name="email_from"required type="email" placeholder="Twój adres E-mail"></input><br/>
+                <form className="kontakt-form" id="kontakt-form" onSubmit={sendEmail}>
+                    <input className="kontakt-input" name="name_from" required type="text" placeholder="Imię" value={userData.firstName}></input><br/>
+                    <input className="kontakt-input" name="email_from"required type="email" placeholder="Twój adres E-mail" value={userData.email}></input><br/>
 
                     <input className="kontakt-input" name="email_title" required type="text" placeholder="Temat"></input><br/>
                     <textarea className="kontakt-textarea" name="message" required rows={5} placeholder="Wiadomość"></textarea><br/>
                     <input className="btn-kontakt" type="submit" value={"Wyślij zapytanie"}></input>
                 </form>
+
+                { isSent && <p>Wiadomość wysłana,<br></br> Dziękujemy za kontakt!</p> }
             </div>
 
 
@@ -41,7 +77,7 @@ const KontaktPage = () => {
                 <div className="kontakt-mapa-info">
                     <h1>TUTAJ NAS ZNAJDZIESZ!</h1>
                     <p>
-                    Przyjdź i sprawdź
+                        Przyjdź i sprawdź
                     </p>
                 </div>
 
