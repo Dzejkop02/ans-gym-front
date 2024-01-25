@@ -87,7 +87,7 @@
 }
 
 .kontakt-input::placeholder, .kontakt-textarea::placeholder {
-    color: #fff;
+    color: #ddd;
 }
 
 .kontakt-input:focus, .kontakt-textarea:focus {
@@ -107,6 +107,8 @@
     color: #fff;
     margin-bottom: 20px;
     resize: vertical;
+    min-height: 200px;
+    max-height: 1000px;
 }
 
 .btn-kontakt {
