@@ -6,7 +6,7 @@
 }
 
 .woda-main-1{
-    background-image: url(../../../public/zdj/globelet-reusable-uw9tZN5TJBU-unsplash.webp);
+    background-image: url('../../../public/zdj/globelet-reusable-uw9tZN5TJBU-unsplash.webp');
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -14,14 +14,14 @@
 
     height: fit-content;
     clip-path: polygon(0 0, 100% 0, 100% 95%, 93% 100%, 7% 98%, 0 95%);
-    padding-top: 5em;
+    padding-top: 12vh;
     padding-bottom: 5em;
 }
 
 .woda-main-2{
     margin-top: 1em;
 
-    background-image: url(../../../public/zdj/victor-furtuna-Ia-eZdmkS9Q-unsplash.webp);
+    background-image: url('../../../public/zdj/victor-furtuna-Ia-eZdmkS9Q-unsplash.webp');
     background-repeat: no-repeat;
     background-size: 200vw;
     background-attachment: local;
@@ -37,7 +37,7 @@
 .woda-kalk{
     width: 80%;
     height: fit-content;
-
+    
     padding-top: 2em;
     padding-bottom: 1em;
     margin: auto;
