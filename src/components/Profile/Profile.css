@@ -3,7 +3,6 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../../../public/zdj/fitness.jpg');
     background-size: cover;
     background-position: center;
-    
 }
 
 .profil {
@@ -44,14 +43,28 @@ p.grey{
 }
 
 .button{
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 1vw;
     background-color: black;
-    padding-left: 15%;
-    padding-right: 15%;
-    border-radius: 20px;
+    border-radius: 2em;
+    width: 20%;
+    height: 20%;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+}
+
+.button:hover{
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: #ef233c;
+    top: 0;
+    left: 0;
+    border-radius: 2em;
+    transition: opacity 0.3s ease; 
 }
 
 @media screen and (max-width: 1450px) {
